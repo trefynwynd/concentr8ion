@@ -1,6 +1,6 @@
 The name of the game is "Concentr8ion."
 
-The purpose is to "search for your m8s" by finding matching pairs of your m8s.
+The purpose is to "search for your m8s" by finding matching pairs of them.
 
 How to play:
 1) Press the "Begin" button to show the board
