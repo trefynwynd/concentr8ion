@@ -15,6 +15,8 @@ function readyCards() {
 
 // board element
 // cards element
+// As a start, this will need object arrays for each row. This will be used to randomize the card entried and also perform the comparison.
+
 // Begin button element
 let beginButton = document.createElement('button')
 beginButton.setAttribute("class", "beginButton")
