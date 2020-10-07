@@ -1,0 +1,33 @@
+/*
+ flexbox, space-around, no media query
+ card flip animation: is that a three image flip?
+ create a background: flappy birds on the diagonal right?
+*/
+/*  */
+
+h1 {
+    font-family: fantasy;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-family: fantasy;
+    font-size: 20px;
+    margin-left: 100px;
+    color: #21525   4;
+}
+
+body {
+  background-color: #5f9ea0;  
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
