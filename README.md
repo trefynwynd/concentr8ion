@@ -10,3 +10,7 @@ How to play:
 5) If it does not match, then the cards will flip back and you will have search out again.
 
 Continue flipping cards until you find all of your m8s.
+
+
+The following wireframe is what I thought would have been my version 1, but it will most likely be my end goal.
+![Concentr8ion, the end?] (/images/Concentr8ion v1.jpeg)
