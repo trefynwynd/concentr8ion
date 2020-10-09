@@ -35,14 +35,17 @@ function placeImage(x) {
 
 
 // // This is the container/box for the how-to-play blurb
-// let blurbBox = document.createElement('section')
+let blurbBox = document.createElement('article')
 // blurbBox.setAttribute('class', 'blurbBox')
 // document.body.appendChild(blurbBox)
+
+// document.blurbBox.createElement('p')
+
 
 // This is the container/box where the two buttons reside
 // Classes made: buttonBox, beginButton, difficultyButton
 
-let buttonBox = document.createElement('section')
+let buttonBox = document.createElement('div')
 buttonBox.setAttribute('class', 'buttonBox')
 document.body.appendChild(buttonBox)
 
@@ -74,49 +77,49 @@ board.appendChild(pares1)
 
 // This is card 2
 const pares2 = document.createElement('img')
-pares2.setAttribute('class', "cardA")
+pares2.setAttribute('class', "cardB")
 pares2.setAttribute('src', './images/eight-cardback.png')
 pares2.setAttribute('value', 2)
 board.appendChild(pares2)
 
-// This is -a- card
+// This is card 3
 const pares3 = document.createElement('img')
-pares3.setAttribute('class', "cardA")
+pares3.setAttribute('class', "cardC")
 pares3.setAttribute('src', './images/eight-cardback.png')
 pares3.setAttribute('value', 3)
 board.appendChild(pares3)
 
-// This is the second card
+// This is card 4
 const pares4 = document.createElement('img')
-pares4.setAttribute('class', "cardA")
+pares4.setAttribute('class', "cardD")
 pares4.setAttribute('src', './images/eight-cardback.png')
 pares4.setAttribute('value', 4)
 board.appendChild(pares4)
 
-// This is -a- card
+// This is card 5
 const pares5 = document.createElement('img')
-pares5.setAttribute('class', "cardA")
+pares5.setAttribute('class', "cardE")
 pares5.setAttribute('src', './images/eight-cardback.png')
 pares5.setAttribute('value', 5)
 board.appendChild(pares5)
 
-// This is the second card
+// This is card 6
 const pares6 = document.createElement('img')
-pares6.setAttribute('class', "cardA")
+pares6.setAttribute('class', "cardF")
 pares6.setAttribute('src', './images/eight-cardback.png')
 pares6.setAttribute('value', 6)
 board.appendChild(pares6)
 
-// This is -a- card
+// This is card 7
 const pares7 = document.createElement('img')
-pares7.setAttribute('class', "cardA")
+pares7.setAttribute('class', "cardG")
 pares7.setAttribute('src', './images/eight-cardback.png')
 pares7.setAttribute('value', 7)
 board.appendChild(pares7)
 
-// This is the second card
+// This is card 8
 const pares8 = document.createElement('img')
-pares8.setAttribute('class', "cardA")
+pares8.setAttribute('class', "cardH")
 pares8.setAttribute('src', './images/eight-cardback.png')
 pares8.setAttribute('value', 8)
 board.appendChild(pares8)
@@ -135,6 +138,56 @@ board.appendChild(pares8)
     
 // displayBoard(8);
 
+board.addEventListener('click', flipCard)
+
+function flipCard(e) {
+    let cardAOpen = false
+    let cardBOpen = false
+    let cardCOpen = false
+    
+//     if (((cardAOpen == true) && (cardBOpen == true)) && (cardCOpen == true)) {
+//         cardAOpen = false
+//         cardBOpen = false
+//         cardCOpen = false
+//         pares1.setAttribute('src', './images/eight-cardback.png')
+//         pares2.setAttribute('src', './images/eight-cardback.png')
+// }
+        if (e.target.className === 'cardA') {
+            console.log('Card poked')
+            cardAOpen = true
+            console.log(cardAOpen)
+            pares1.setAttribute('src', './images/placeimg_140_200_animals.jpg')
+        } else if (e.target.className === 'cardB') {
+            console.log('Second card poked')
+            cardBOpen = true
+            console.log(cardBOpen)
+            pares2.setAttribute('src', './images/placeimg_140_200_tech.jpg')
+        } else if (e.target.className === 'cardC') {
+                console.log('Third card poked')
+                cardCOpen = true
+                pares3.setAttribute('src', './images/placeimg_140_200_grayscale_tech.jpg')
+            }
+}
+
+function returnFlip (cardAOpen, cardBOpen) {
+    if ((e.target.className === 'cardA') && (cardAOpen === true)) {
+        console.log('Card Return')
+        cardAOpen = false
+        console.log(cardAOpen)
+        pares1.setAttribute('src', './images/placeimg_140_200_people.png')
+    } else if ((e.target.className === 'cardB') && (cardBOpen === true)) {
+        console.log('Second card Return')
+        cardBOpen = false
+        console.log(cardBOpen)
+        pares2.setAttribute('src', './images/placeimg_140_200_nature.jpg')
+    }
+    
+}
+
+// This is the function where an if/then statement checks if they match
+function checkPair() {
+
+}
 
 document.querySelector('footer').innerText = "Coming Soon: 6s and 7s."
 
