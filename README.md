@@ -14,4 +14,4 @@ Continue flipping cards until you find all of your m8s.
 
 The following wireframe is what I thought would have been my version 1, but it will most likely be my end goal.
 
-![Wireframe](/images/Concentr8ion v1.jpeg)
+<img src="https://github.com/trefynwynd/concentr8ion/blob/master/images/Concentr8ion%20v1.jpeg">
