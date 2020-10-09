@@ -156,16 +156,16 @@ function flipCard(e) {
             console.log('Card poked')
             cardAOpen = true
             console.log(cardAOpen)
-            pares1.setAttribute('src', './images/placeimg_140_200_animals.jpg')
+            pares1.setAttribute('src', './images/dogbook.jpg')
         } else if (e.target.className === 'cardB') {
             console.log('Second card poked')
             cardBOpen = true
             console.log(cardBOpen)
-            pares2.setAttribute('src', './images/placeimg_140_200_tech.jpg')
+            pares2.setAttribute('src', './images/camera.jpg')
         } else if (e.target.className === 'cardC') {
                 console.log('Third card poked')
                 cardCOpen = true
-                pares3.setAttribute('src', './images/placeimg_140_200_grayscale_tech.jpg')
+                pares3.setAttribute('src', './images/bokeh.jpg')
             }
 }
 
@@ -174,12 +174,12 @@ function returnFlip (cardAOpen, cardBOpen) {
         console.log('Card Return')
         cardAOpen = false
         console.log(cardAOpen)
-        pares1.setAttribute('src', './images/placeimg_140_200_people.png')
+        pares1.setAttribute('src', './images/twofunny.png')
     } else if ((e.target.className === 'cardB') && (cardBOpen === true)) {
         console.log('Second card Return')
         cardBOpen = false
         console.log(cardBOpen)
-        pares2.setAttribute('src', './images/placeimg_140_200_nature.jpg')
+        pares2.setAttribute('src', './images/waterfall.jpg')
     }
     
 }
