@@ -11,6 +11,9 @@ How to play:
 
 Continue flipping cards until you find all of your m8s.
 
+The following wireframe is a v0.5 goal:
+<img src="https://github.com/trefynwynd/concentr8ion/blob/master/images/Concentr8ion_v0.2.png">
+
 
 The following wireframe is what I thought would have been my version 1, but it will most likely be my end goal.
 
